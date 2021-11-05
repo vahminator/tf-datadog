@@ -1,0 +1,11 @@
+resource "datadog_integration_slack_channel" "test_channel" {
+  account_name = "nightywi"
+  channel_name = "#notify"
+
+  display {
+    message  = true
+    notified = true
+    snapshot = false
+    tags     = true
+  }
+}
