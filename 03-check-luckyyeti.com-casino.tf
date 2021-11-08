@@ -30,8 +30,8 @@ resource "datadog_synthetics_test" "luckyyeti-casino-check" {
     }
   }
   name    = "Check luckyyeti.com/casino"
-  message = "Notify @pagerduty"
-  tags    = ["foo:bar", "foo", "env:test"]
+  message = "@vk@atlas-iac.com"
+  tags    = ["type:casino", "env:dev"]
   
 
   status = "live"

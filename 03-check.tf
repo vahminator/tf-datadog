@@ -30,8 +30,8 @@ resource "datadog_synthetics_test" "nashbet-live-check" {
     }
   }
   name    = "Check nashbet.com/live"
-  message = "Notify @pagerduty"
-  tags    = ["foo:bar", "foo", "env:test"]
+  message = "@vk@atlas-iac.com"
+  tags    = ["type:live", "env:dev"]
   
 
   status = "live"

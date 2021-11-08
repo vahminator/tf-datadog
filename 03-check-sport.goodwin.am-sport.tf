@@ -30,8 +30,8 @@ resource "datadog_synthetics_test" "goodwin-sport-check" {
     }
   }
   name    = "Check sport.goodwin.am/en/sport"
-  message = "Notify @pagerduty"
-  tags    = ["foo:bar", "foo", "env:test"]
+  message = "@vk@atlas-iac.com"
+  tags    = ["type:sport", "env:dev"]
   
 
   status = "live"

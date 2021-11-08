@@ -7,8 +7,8 @@ resource "datadog_synthetics_test" "check-one" {
   }
    assertion {
     type     = "packetLossPercentage"
-    operator = "is"
-    target   = 1
+    operator = "lessThan"
+    target   = 0.6
   } 
   locations = ["aws:eu-west-2", "aws:ca-central-1", "aws:ap-south-1"]
 

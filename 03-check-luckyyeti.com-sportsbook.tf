@@ -30,8 +30,8 @@ resource "datadog_synthetics_test" "luckyyeti-sportsbook-check" {
     }
   }
   name    = "Check luckyyeti.com/sportsbook"
-  message = "Notify @pagerduty"
-  tags    = ["foo:bar", "foo", "env:test"]
+  message = "@vk@atlas-iac.com"
+  tags    = ["type:sportsbook", "env:dev"]
   
 
   status = "live"

@@ -30,8 +30,8 @@ resource "datadog_synthetics_test" "sportsbook-module-sport-check" {
     }
   }
   name    = "Check sportsbook.play-module.com"
-  message = "Notify @pagerduty"
-  tags    = ["foo:bar", "foo", "env:test"]
+  message = "@vk@atlas-iac.com"
+  tags    = ["type:sportsbook", "env:dev"]
   
 
   status = "live"

@@ -8,7 +8,7 @@ resource "datadog_synthetics_test" "check-apo" {
    assertion {
     type     = "packetLossPercentage"
     operator = "lessThan"
-    target   = "0.3"
+    target   = 0.6
   } 
   locations = ["aws:eu-west-2", "aws:ca-central-1", "aws:ap-south-1"]
 
